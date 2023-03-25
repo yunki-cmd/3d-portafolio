@@ -23,9 +23,10 @@ const Hero = () => {
       
       <ComputersCanvas />
 
-      <div className='absolute xs:-bottom-16 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute -bottom-24 xs:-bottom-16 w-full flex justify-center items-center'>
+        <Footer />
         <a href="#about">
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='xs:w-[35px] xs:h-[64px] w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start xs:p-2 p-1'>
             <motion.div
               animate={{
               y:[0,34,0]
@@ -37,14 +38,32 @@ const Hero = () => {
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             >
-
             </motion.div>
           </div>
         </a>
       </div>
-
     </section>
   )
+}
+
+function Footer() {
+  return (
+    <footer className="xs:py-4 -bottom-full xs:bottom-0 xs:text-xs text-[10px] xs:left-[40%]" style={{ fontFamily: "Arial", position: "absolute", width: "100%"}}>
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center">
+        <p className="text-gray-400 text-center md:text-left mb-2 md:mb-0">
+          This website is inspired by{" "}
+          <a
+            href="https://www.youtube.com/c/javascriptmastery"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-300"
+          >
+            Master JavaScript
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
 }
 
 export default Hero

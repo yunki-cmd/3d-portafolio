@@ -32,13 +32,13 @@ const Card = () => {
   return (
     <div className="bg-gray-800 h-full shadow-lg rounded-lg overflow-hidden flex justify-center items-center text-center">
       <div className="px-4 py-2">
-        <h2 className="text-lg font-bold text-white">¡Sígueme en mis redes sociales!</h2>
-        <p className="text-white text-sm mt-1">Encuéntrame en:</p>
+        <h2 className="text-lg font-bold text-white">Follow me on my social media!</h2>
+        <p className="text-white text-sm mt-1">Find me at:  </p>
         <div className="flex justify-center items-center mt-2">
-          <a href="https://www.linkedin.com/in/tu-perfil-de-LinkedIn/" target="_blank" rel="noopener noreferrer" className="mr-4 text-white hover:text-white">
+          <a href="https://github.com/yunki-cmd" target="_blank" rel="noopener noreferrer" className="mr-4 text-white hover:text-white">
             <img src={githubContact} alt="github Contact" className='w-9 h-9' />
           </a>
-          <a href="https://github.com/tu-perfil-de-GitHub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white">
+          <a href="https://www.linkedin.com/in/yun-qiang-wu-7a96581a6/ " target="_blank" rel="noopener noreferrer" className="text-white hover:text-white">
             <img src={linkendi} alt="linkendi contact" className='h-9 w-9' />
           </a>
         </div>

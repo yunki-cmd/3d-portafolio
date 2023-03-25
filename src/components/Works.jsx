@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Tilt from 'react-tilt'
 
 import { motion } from 'framer-motion'
@@ -18,7 +18,7 @@ const Works = () => {
       </motion.div>
       <div className='w-full flex'>
         <motion.p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          listas de proyectos
+          Project lists
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
@@ -36,10 +36,33 @@ const Works = () => {
   )
 }
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, page_web_url }) => {
 
+  const [isMobile, setIsMobile] = useState(false)
+
+   useEffect(() => {
+ 
+     /* una consulta de medios que se activará cuando el ancho de la ventana del navegador sea menor o igual a 500 píxeles, y luego utiliza el objeto MediaQueryList resultante para comprobar si la consulta se cumple actualmente. */
+ 
+     const mediaQueary = window.matchMedia('(max-width:550px')
+     
+     // se devuleve tru o false
+     setIsMobile(mediaQueary.matches)
+ 
+     const handlerMediaQuearyChange = (event) => {
+       setIsMobile(event.matches)
+     }
+ 
+     mediaQueary.addEventListener('change', handlerMediaQuearyChange)
+ 
+     return () => {
+       mediaQueary.removeEventListener('change',handlerMediaQuearyChange)
+     }
+ 
+   }, [])
+  
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={isMobile ? fadeIn("up", "spring", index * 0.5, 0.75) : ''}>
       <Tilt
         options={{
           max: 45,
@@ -65,7 +88,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           </div>
           {/* page link */}
           <div onClick={() => {
-            window.open(source_code_link, "_blank");
+            window.open(page_web_url, "_blank");
           }}
             className='bg-white border border-black w-10 h-10 mx-2 rounded-full flex justify-center items-center cursor-pointer transition ease-in-out delay-100 hover:scale-125'
           >
@@ -81,7 +104,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         <div className='mt-4 flex flex-wrap gap-2'>
           {
             tags.map(tag => {
-              return <p className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
+              return <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
             })
           }
         </div>

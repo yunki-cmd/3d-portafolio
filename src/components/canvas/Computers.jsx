@@ -40,7 +40,7 @@ const ComputersCanvas = () => {
  
      /* una consulta de medios que se activará cuando el ancho de la ventana del navegador sea menor o igual a 500 píxeles, y luego utiliza el objeto MediaQueryList resultante para comprobar si la consulta se cumple actualmente. */
  
-     const mediaQueary = window.matchMedia('(max-width:870px')
+     const mediaQueary = window.matchMedia('(max-width:550px')
      
      // se devuleve tru o false
      setIsMobile(mediaQueary.matches)

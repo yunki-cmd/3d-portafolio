@@ -36,6 +36,12 @@ import tripguide from "./tripguide.png";
 import githubContact from "./github-mark.svg"
 import linkendi from "./LI-In-Bug.png"
 
+import ArrowFood from "./ArrowFood.png"
+import ArrowFoodApiRest from "./rest.png"
+import giphy from "./giphy.gif"
+import Jump from "./JUMP.jpg"
+import minsait from "./minsait.jpg"
+
 export {
   logo,
   backend,
@@ -69,5 +75,10 @@ export {
   jobit,
   tripguide,
   githubContact,
-  linkendi
+  linkendi,
+  ArrowFood,
+  ArrowFoodApiRest,
+  giphy,
+  Jump,
+  minsait
 };

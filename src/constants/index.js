@@ -17,13 +17,12 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  ArrowFood,
+  ArrowFoodApiRest,
+  giphy,
+  Jump,
+  minsait
 } from "../assets";
 
 export const navLinks = [
@@ -121,150 +120,221 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Backend Practices in Jump",
+    company_name: "JUMP",
+    icon: Jump,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2021 - Jun 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Using languages such as Scala and Amazon Query to detect inconsistencies in data"
     ],
   },
   {
     title: "Full stack Developer",
     company_name: "Meta",
-    icon: meta,
+    icon: minsait,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "October 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Creating open source solutions for automated testing using Selenium Grid and Appium.",
+      "Development of a web application using Vue.js 2 and Spring Boot backend.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Arrow Food",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A restaurant website built using JavaScript, CSS, and HTML, combined with Bootstrap 5 technology and Ajax on the frontend. On the backend, there is a REST API that manages emails, users, and reservations using Node.js",
     tags: [
       {
-        name: "react",
+        name: "CSS3",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Html5",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ArrowFood,
+    source_code_link: "https://github.com/yunki-cmd/arrowfood",
+    page_web_url:'https://giphy.com/gifs/LM70LNp9IXysTaTG4U/fullscreen'
   },
   {
-    name: "Job IT",
+    name: "Api ArrowFood",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A REST API that manages registrations, logins, reservations, and emails for the ArrowFood website.",
     tags: [
       {
-        name: "react",
+        name: "Mongodb",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Nodeemail",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: ArrowFoodApiRest,
+    source_code_link: "https://github.com/yunki-cmd/api-arrowfod",
+    page_web_url:'https://giphy.com/gifs/LM70LNp9IXysTaTG4U/fullscreen'
   },
   {
-    name: "Trip Guide",
+    name: "Giffy",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A project by Midudev that applies all the functions contained in React, adapting the project and implementing its own API to add new features.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Api-rest",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: giphy,
+    source_code_link: "https://github.com/yunki-cmd/mono-repository-gif",
+    page_web_url:'https://giphy.com/gifs/LM70LNp9IXysTaTG4U/fullscreen'
   },
+  {
+    name: "Clone-Rawg",
+    description:
+      "A Rawg clone application has been developed using React and Tailwind CSS.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Api-rest",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://firebasestorage.googleapis.com/v0/b/api-portafolio-87079.appspot.com/o/users%2F7OwyAlKeqaQcXjzflzMiXsrOS6b2%2Fimages%2Fclone-rawg.PNG?alt=media&token=fd332ab0-f81d-4146-9b5a-bca2162d78f8",
+    source_code_link: "https://github.com/yunki-cmd/clone-rawg",
+    page_web_url:'https://clone-rawg-yunki-cmd.vercel.app/'
+  },
+  {
+    name: "Frontend Mentor - Order Summary",
+    description:
+      "Frontend-Mentor challenge for creating a responsive summary order card.",
+    tags: [
+      {
+        name: "Html5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "green-text-gradient",
+      }
+    ],
+    image: "https://firebasestorage.googleapis.com/v0/b/api-portafolio-87079.appspot.com/o/users%2F7OwyAlKeqaQcXjzflzMiXsrOS6b2%2Fimages%2Freto-orderSummary.PNG?alt=media&token=4f0f7dce-65f2-4c7b-95f2-04017629f54a",
+    source_code_link: "https://github.com/yunki-cmd/reto-frontedMento-orderSummaryComponent",
+    page_web_url:'https://yunki-cmd.github.io/reto-frontedMento-orderSummaryComponent/'
+  },
+  {
+    name: "Frontend Mentor - Card Social",
+    description:
+      "Frontend-Mentor challenge for creating a responsive social card.",
+    tags: [
+      {
+        name: "Html5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "https://firebasestorage.googleapis.com/v0/b/api-portafolio-87079.appspot.com/o/users%2F7OwyAlKeqaQcXjzflzMiXsrOS6b2%2Fimages%2Freto-cardSocial.PNG?alt=media&token=34338b39-abf5-4087-acd0-c5c8899b5abd",
+    source_code_link: "https://github.com/yunki-cmd/retofrontedMento-SocialproofCard.git",
+    page_web_url:'https://yunki-cmd.github.io/retofrontedMento-SocialproofCard/'
+  },
+  {
+    name: "Dashboard-Time-Tracking",
+    description:
+      "Frontend-Mentor challenge for creating a responsive time dashboard.",
+    tags: [
+      {
+        name: "CSS3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Html5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://firebasestorage.googleapis.com/v0/b/api-portafolio-87079.appspot.com/o/users%2F7OwyAlKeqaQcXjzflzMiXsrOS6b2%2Fimages%2Fdashboard-time-tracking.jpg?alt=media&token=57dab917-2d38-47c1-825c-2708d91abf8d",
+    source_code_link: "https://github.com/yunki-cmd/dashboard-time-tracking",
+    page_web_url:'https://yunki-cmd.github.io/dashboard-time-tracking/'
+  },
+  {
+    name: "Rock-Paper-Scissors",
+    description:
+      "A rock-paper-scissors game has been developed using Vue 3. This game employs the popular hand game format, allowing the user to select their move and see real-time results. Vue 3 is a modern and powerful technology for web application development, ensuring a smooth and engaging user experience.",
+    tags: [
+      {
+        name: "CSS3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Html5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://firebasestorage.googleapis.com/v0/b/api-portafolio-87079.appspot.com/o/users%2FPTI7Y23d1TQ5bU6fdXIV0grzkZ83%2Fimages%2Frock-paper-scissors.PNG?alt=media&token=64c9c11b-2ae2-49a2-971f-015902e156d1",
+    source_code_link: "https://github.com/yunki-cmd/rock_paper_scissors",
+    page_web_url:'https://rock-paper-scissors-six-iota.vercel.app/'
+  },
+  {
+    name: "Interactive Card Details Form",
+    description:
+      "The form enables real-time updating of the card details.",
+    tags: [
+      {
+        name: "CSS3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Html5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://firebasestorage.googleapis.com/v0/b/api-portafolio-87079.appspot.com/o/users%2FoCGQOaHcNsbUgcURTitJmtVhGfq1%2Fimages%2FnftCardBank.PNG?alt=media&token=7bf0ba1a-990d-486c-a36b-0687770ee886",
+    source_code_link: "https://github.com/yunki-cmd/Reto-FrontedMentor/tree/interactive-card-details-form",
+    page_web_url:'https://card-detail-form-interactive.netlify.app/'
+  },
+  
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
